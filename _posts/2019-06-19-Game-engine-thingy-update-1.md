@@ -119,13 +119,13 @@ One of the most important feature I noticed when exploring other engines was the
 #### Entity Manager
 I wanted to be able to see all of the entities in my scene as well as edit their component values while the game is running. 
 
-<iframe src='https://gfycat.com/assuredremotearcticfox' frameborder='0' scrolling='no' width='640' height='453'></iframe>
+<iframe src='https://gfycat.com/ifr/assuredremotearcticfox' frameborder='0' scrolling='no' width='640' height='453'></iframe>
 
 
 #### Lua Console
 One of the big features I wanted was the ability to run lua scripts. In addition to this I thought it would be nice to be able to run lua in the game while it was running. So I made a lua "Console".
 
-![Lua Console](../update1-lua_console.gif)
+<iframe src='https://gfycat.com/ifr/damagedcornycoyote' frameborder='0' scrolling='no' width='640' height='453'></iframe>
 
 ### Lua
 One of biggest features I wanted to have was a scripting language that allowed me to make changes to the game without needing to recompile the entire engine. I dedcided to use lua because there are some [really nice libraries](https://github.com/ThePhD/sol2) out there that abstract luas c bindings into more friendly c++ syntax. Figuring out how to structure my engine around this has been a total pain in the ass. This feature is still very much in progress but as of right now I am able to create a script with some basic game logic that gets called from the c++ engine
