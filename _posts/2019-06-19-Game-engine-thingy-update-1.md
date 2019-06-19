@@ -7,10 +7,10 @@ categories: dev update
 
 Hi,
 
-For the past 2 weeks I have been procrastinating studying for finals. To facilitate my procrastination I decided to start working on a small game. I picked up my trusty tools, C++ and [SFML](https://www.sfml-dev.org/), and started working. Before I even got to the fun part, actually making the game, I got bogged down by the amount of setup work there is. This got me thinking, what if I made a codebase that I could reuse for some other projects in the future so I can skip all of the bullshit setup work that I run through every time I try to make something. So I started on my journy to build myself a small game engine. Before jumping in I looked around at other engines to see what I liked and decided on a set of feature that I wanted within my engine. The three most important things I came up with were: ECS structure, plenty of tools to make development faster, and lua scripting integration.
+For the past 2 weeks I have been procrastinating studying for finals. To facilitate my procrastination I decided to start working on a small game. I picked up my trusty tools, C++ and [SFML](https://www.sfml-dev.org/), and started working. Before I even got to the fun part, actually making the game, I got bogged down by the amount of setup work there is. This got me thinking, what if I made a codebase that I could reuse for some other projects in the future so I can skip all of the bullshit setup work that I run through every time I try to make something. So I started on my journey to build myself a small game engine. Before jumping in I looked around at other engines to see what I liked and decided on a set of feature that I wanted within my engine. The three most important things I came up with were: ECS structure, plenty of tools to make development faster, and lua scripting integration.
 
 ### Premake5
-Now before I jump into all of those fancy feature and how I have gone about implementing them in the last 2 weeks. I need to talk a little about how I set this project up with the help of an amazing tool called premake. Premake is a tool that will generate project files for you based on a configuration script written in lua.
+Now before I jump into all of those fancy features and how I have gone about implementing them in the last 2 weeks. I need to talk a little about how I set this project up with the help of an amazing tool called premake. Premake is a tool that will generate project files for you based on a configuration script written in lua.
 
 {% highlight lua %}
 workspace "Game Engine Thingy"
@@ -129,7 +129,7 @@ One of the big features I wanted was the ability to run lua scripts. In addition
 <div style='position:relative; padding-bottom:calc(70.80% + 44px)'><iframe src='https://gfycat.com/ifr/favoriteassuredcoqui' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
 
 ### Lua
-One of biggest features I wanted to have was a scripting language that allowed me to make changes to the game without needing to recompile the entire engine. I dedcided to use lua because there are some [really nice libraries](https://github.com/ThePhD/sol2) out there that abstract luas c bindings into more friendly c++ syntax. Figuring out how to structure my engine around this has been a total pain in the ass. This feature is still very much in progress but as of right now I am able to create a script with some basic game logic that gets called from the c++ engine
+One of biggest features I wanted to have was a scripting language that allowed me to make changes to the game without needing to recompile the entire engine. I decided to use lua because there are some [really nice libraries](https://github.com/ThePhD/sol2) out there that abstract luas c bindings into more friendly c++ syntax. Figuring out how to structure my engine around this has been a total pain in the ass. This feature is still very much in progress but as of right now I am able to create a script with some basic game logic that gets called from the c++ engine
 
 {% highlight lua %}
 require("entities/player")
