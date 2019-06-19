@@ -119,7 +119,8 @@ One of the most important feature I noticed when exploring other engines was the
 #### Entity Manager
 I wanted to be able to see all of the entities in my scene as well as edit their component values while the game is running. 
 
-<iframe src='https://gfycat.com/assuredremotearcticfox' frameborder='0' scrolling='no' width='640' height='346' allowfullscreen></iframe>
+<iframe src='https://gfycat.com/assuredremotearcticfox' frameborder='0' scrolling='no' width='640' height='453'></iframe>
+
 
 #### Lua Console
 One of the big features I wanted was the ability to run lua scripts. In addition to this I thought it would be nice to be able to run lua in the game while it was running. So I made a lua "Console".
